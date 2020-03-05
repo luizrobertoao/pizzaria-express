@@ -19,6 +19,6 @@ router.get('cadastrar/:sabor/:preco', (req, res) => {
 // usando o controller para requisitar ao model Cardapio.js os dados desta rota.
 router.get('/ver', cardapioController.abrirCardapio);
 
-router.get('ver/:sabor', cardapioController.detalhePizza);
+router.get('/ver/:sabor', cardapioController.detalhePizza);
 
 module.exports = router;

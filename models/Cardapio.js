@@ -8,16 +8,15 @@ function listarCardapio() {
 };
 
 function detalharPizza(pizza) {
-    cardapio.map((objPizza) => {
+    var saborEscolhido = cardapio.map((objPizza) => {
         var falha = 'Pizza inexistente'
         switch(objPizza.nome) {
             case pizza:
                 return objPizza;
                 break;
-            default:
-                return falha;
         };
     });
+    return saborEscolhido[0];
 };
 
 
